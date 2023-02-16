@@ -1,6 +1,8 @@
 #![allow(unused)] // get rid of warnings for unused variables
 #[warn(bare_trait_objects)]
 
+// Running Rust code : cargo run main_3.rs
+
 // use rand::Rng;
 use std::cmp::Ordering;
 use std::fs::File;

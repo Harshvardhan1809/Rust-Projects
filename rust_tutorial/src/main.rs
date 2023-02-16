@@ -1,5 +1,7 @@
 #![allow(unused)] // get rid of warnings for unused variables
 
+// Running Rust code : cargo run main.rs
+
 // use rand::Rng;
 use std::cmp::Ordering;
 use std::fs::File;
