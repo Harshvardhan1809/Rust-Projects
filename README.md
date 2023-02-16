@@ -1,4 +1,4 @@
-# Rust Projects
+# Rust Projects 🦀
 
 ### Code for a few Rust projects
 
