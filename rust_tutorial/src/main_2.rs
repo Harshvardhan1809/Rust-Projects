@@ -111,4 +111,6 @@ fn main(){
             None => println!("Batman is not a hero"), 
         }
     }
+
+    println!("Hello World"); 
 }
