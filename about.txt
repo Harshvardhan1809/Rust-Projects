@@ -1,0 +1,76 @@
+To create a Rust project: cargo new project_name 
+cargo is package manager 
+
+Cargo file stores all dependencies while lock file stores the version
+
+Import libraries using the std:: syntax 
+
+Use mutable variables while taking input 
+Immutable variables make debugging easy since no need to track how variables change 
+
+read_line has built-in error-handling. It has a enumerated type of 2 values OK or ERROR
+
+Shadowing : can defined different variables with the same name 
+
+Rust is statically typed. All types must be defined
+
+Placeholder variables which are not declared start with an underscore 
+eg. let _is_true: bool = true; 
+Rust compiler ignores these variables
+
+Getting a random number from 1-100 
+let random_number : i32 = rand::thread_rng().gen_range(1..101); 
+
+Ternary operators
+let can_vote = if my_age >= 18 { true } else { false };
+
+match statement is basically switch 
+match has more functionalities - cmp() provides order matching
+
+Iterators can be used to loop through array with for loop 
+
+String is mutable, &str is view only 
+String is a heap allocated string 
+Mutable strings can be cleared
+eg. let mut st5: String = "Harsh";
+st5.clear(); 
+
+st8 = st6 + &st7
+means that st6 no longer exists (since in st8 now) but st7 still exists 
+
+Casting
+let int_u32 : u32 = (int_u8 as u32) + (int2_u8 as u32); 
+
+Enumerated types or enums: help us create custom data types
+
+Vectors have push and pop functions, can be referenced, can be mutated (in case of mut)
+
+Functions: you need to specify the return type in the function declaration
+
+Generics : Similar to that in Java 
+
+Ownership : Rust has following rules for ownership
+1. Each value has a variable that is called the owner
+2. Each value has only one owner
+3. When the owner goes out of scope, the object disappears
+Rules only apply to Strings, Vectors and Tuples
+
+HashMap : Basically a dictionary with functons like get 
+
+Structs, Traits 
+
+Modules
+
+Exceptions and Panic: Rust does not have exceptions but has panic macro
+
+Iterator: just borrows values from the array and can't be used to modify 
+
+Closure: function without name, uses pipe characters
+Can access variables outside the body 
+We can pass closures to functions
+
+Smart Pointers
+Provide functionality beyond pointing to data in memory 
+
+Concurrency 
+Makes use of threads, threads can be joined to prevent confusion while execution
